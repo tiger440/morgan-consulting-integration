@@ -42,17 +42,6 @@ header nav ul .contact {
     margin: 0 10px;
 }
 
-.btn-blue {
-    background: #1e3684;
-    color: #fff;
-    padding: 10px 25px;
-    border-radius: 500px;
-    text-align: center;
-    width: 120px;
-    font-size: 14px;
-    text-decoration: none;
-}
-
 /* GOLD BUTTON */
 
 .btn-gold {
@@ -62,6 +51,31 @@ header nav ul .contact {
     padding: 10px 25px;
     border-radius: 500px;
     font-size: 14px;
+}
+
+.btn-gold:hover {
+    background: #fff;
+    color: #b7a088;
+}
+
+/* BLUE BUTTON */
+
+.btn-blue {
+    background: #1e3684;
+    color: #fff;
+    padding: 10px 25px;
+    border: 1px solid transparent;
+    border-radius: 500px;
+    text-align: center;
+    width: 120px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.btn-blue:hover {
+    background: #fff;
+    color: #1e3684;
+    border: 1px solid #1e3684;
 }
 
 main .presentation {
