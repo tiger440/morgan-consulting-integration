@@ -11,8 +11,6 @@ body {
     border-right: 20px solid #fff;
 }
 
-/* NAV */
-
 header nav {
     display: flex;
     justify-content: space-between;
@@ -62,15 +60,6 @@ header nav ul .contact a {
     font-size: 14px;
 }
 
-
-/* 
-
-
-SECTION 1 
-
-
-*/
-
 main .presentation {
     width: 100%;
     display: flex;
@@ -83,7 +72,7 @@ main .presentation .blueSquare {
     background: #1e3684;
 }
 
-.slogan {
+.subheading {
     font-size: 24px;
     font-weight: 400;
 }
@@ -110,30 +99,22 @@ main .presentation .blueSquare .servicesLinkContainer {
     margin-top: 50px;
 }
 
-
-/* 
-
-
-SECTION 2 
-
-
-*/
-
 main .services {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     text-align: center;
-    padding: 140px 0px;
+    padding: 140px 0;
 }
 
 main .services .service {
     display: flex;
     flex-direction: column;
-    padding: 10px 0px;
+    padding: 10px 0;
     width: 22%;
 }
 
-main .services .service:hover {
+main .services .serviceLink:hover {
     transition: 0.1s ease-in-out;
     box-shadow:0 5px 15px rgb(0 0 0 / 8%);
 }
@@ -144,17 +125,15 @@ main .services .service .serviceLink {
     padding: 10px;
 }
 
-main .services .service .serviceLink > * {
-    padding: 10px;
-    font-weight: 400;
-}
 
-main .services .service .serviceLink .serviceName {
+main .services .service .serviceName {
+    margin-top: 20px;
     font-size: 20px;
+    font-weight: 400;
     color: #2D2E33;
 }
 
-main .services .service .serviceLink .serviceDescription {
+main .services .service .serviceDescription {
     padding: 20px;
 }
 
@@ -172,7 +151,7 @@ main .ourCompany >* {
 main .team {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0px;
+    padding: 20px 0;
 }
 
 main .team .member {
@@ -207,8 +186,6 @@ main .team .member a .memberInfos {
 }
 
 main .team .member a .memberInfos .memberName {
-    font-size: 24px;
-    font-weight: 400;
     color: #FFF;
 }
 
@@ -227,7 +204,7 @@ main .team .member a:hover > .memberInfos {
 main .chooseUs {
     display: flex;
     justify-content: center;
-    padding: 130px 0px;
+    padding: 130px 0;
 }
 
 main .chooseUs .chooseUsSection {
@@ -274,9 +251,6 @@ main .consultation .phoneMan {
 main .consultation .consultationInfos {
     background-image: url("../src/home-contact-02-75c0e032.webp");
     position: relative;
-}
-
-main .consultation .consultationInfos {
     padding: 130px 80px;
     display: flex;
 }
@@ -310,7 +284,7 @@ main .consultation .consultationInfos .consultationInfosLinks {
 }
 
 main .consultation .consultationInfos .consultationInfosLinks >* {
-    margin: 0px 10px;
+    margin: 0 10px;
     text-decoration: none;
     color: #fff;
 }
@@ -344,31 +318,35 @@ main .clients .clientsLogo >* {
     padding: 30px;
 }
 
-main .projectHeader {
-    padding: 210px;
+main .blueTypeHeader {
+    padding: 200px;
     background: rgba(30, 54, 132);
 }
-main .projectHeader >* {
+main .blueTypeHeader >* {
     position: relative;
     left: 1%;
     padding: 10px;
 }
 
-main .projectHeader .projectHeaderTitle {
+main .blueTypeHeader .blueTypeHeaderTitle {
     font-size: 45px;
     font-weight: 400;
     color: #fff;
 }
 
-main .projectHeader .description {
+main .blueTypeHeader .description {
     color: #FFFFFFB3;
+}
+
+main .blueTypeHeader .servicesHeaderDescription {
+    font-size: 20px;
 }
 
 main .projects {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0px 150px;
+    padding: 0 150px;
 }
 
 main .projects .project {
@@ -400,6 +378,41 @@ main .projects .project .illustration a img {
     height: 370px;
 }
 
+.servicesMain > div {
+    margin: 0 15%;
+}
+
+.servicesMain .blueTypeHeader {
+    margin: 0 !important;
+}
+
+.servicesMain .services {
+    padding: 100px 0;
+    flex-wrap: wrap;
+}
+
+.servicesMain .services .service {
+    text-align: start;
+    padding: 30px;
+    width: 30%;
+    flex-grow: 2;
+}
+
+.servicesMain .services .service >* {
+    margin-top: 25px;
+}
+.servicesMain .services .service .serviceLogo {
+    width: 80px;
+}
+
+.servicesMain .services .service .serviceDescription {
+    padding: 0;
+}
+
+.servicesMain .services .service .more {
+    text-decoration: none;
+    font-size: 14px;
+}
 
 /* /////////////////////////////////////////////
 ////////////////////////////////////////////////
