@@ -42,11 +42,15 @@ header nav ul .contact {
     margin: 0 10px;
 }
 
-header nav ul .contact a {
+.btn-blue {
     background: #1e3684;
     color: #fff;
     padding: 10px 25px;
     border-radius: 500px;
+    text-align: center;
+    width: 120px;
+    font-size: 14px;
+    text-decoration: none;
 }
 
 /* GOLD BUTTON */
@@ -125,12 +129,8 @@ main .services .service .serviceLink {
     padding: 10px;
 }
 
-
 main .services .service .serviceName {
     margin-top: 20px;
-    font-size: 20px;
-    font-weight: 400;
-    color: #2D2E33;
 }
 
 main .services .service .serviceDescription {
@@ -346,7 +346,7 @@ main .projects {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 150px;
+    padding: 60px 150px 120px 150px;
 }
 
 main .projects .project {
@@ -378,12 +378,159 @@ main .projects .project .illustration a img {
     height: 370px;
 }
 
-.servicesMain > div {
-    margin: 0 15%;
+main .servicesCatalog {
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f2;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 
-.servicesMain .blueTypeHeader {
-    margin: 0 !important;
+main .servicesCatalog .servicesCatalogDownload {
+    display: flex;
+    justify-content: center;
+}
+
+main .servicesCatalog .servicesCatalogDownload >* {
+    width: 33%;
+    padding-right: 50px;
+}
+
+main .servicesCatalog .servicesCatalogDownload img {
+    min-width: 305px;
+}
+
+main .servicesCatalog .servicesCatalogDownload .servicesCatalogDownload2017 {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+main .servicesCatalog .servicesCatalogDownload .servicesCatalogDownload2017 >* {
+    margin-top: 15px;
+}
+
+main .servicesCatalog .tips {
+    margin-top: 80px;
+}
+
+main .servicesCatalog .tips .tipsTitle {
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+main .servicesCatalog .tips .tipsTitle::before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: calc(-.1 * 1em);
+    vertical-align: middle;
+    height: calc(4px + 0.7em);
+    margin-right: calc(10px + 0.2em);
+    border-left: calc(2px + 0.05em) solid #1e3684;
+}
+
+main .servicesCatalog .tips .tipsDoc {
+    display: flex; 
+    justify-content: space-between;
+}
+
+main .servicesCatalog .tips .tipsDoc .tipsDocSection {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    padding-right: 70px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 8%);
+}
+
+main .servicesCatalog .tips .tipsDoc .tipsDocSection:not(:first-child) {
+    margin-left: 20px;
+}
+
+main .servicesCatalog .tips .tipsDoc .tipsDocSection .tipsDocSectionList {
+    margin-top: 20px;
+
+}
+
+main .servicesCatalog .tips .tipsDoc .tipsDocSection .tipsDocSectionList li {
+    margin-top: 20px;
+    list-style: none;
+}
+
+main .servicesCatalog .tips .tipsDoc .tipsDocSection .tipsDocSectionList li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #a3a4a8;
+}
+
+main .servicesCatalog .tips .tipsDoc .tipsDocSection .tipsDocSectionTitle {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+main .servicesCatalog .tips .tipsDownload {
+    margin-top: 40px;
+}
+
+main .servicesCatalog .tips .tipsDownload a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #b7a088;
+}
+
+main .faq {
+    display: flex;
+    flex-direction: column;
+    padding: 150px 0;
+}
+
+main .faq .faqTitle {
+    margin-bottom: 40px;
+    padding-right: 70%;
+}
+
+main .faq .faqBody {
+    display: flex;
+    position: relative;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+main .faq .faqBody .faqQuestions {
+    display: flex;
+    flex-direction: column;
+}
+
+
+main .faq .faqBody .faqQuestions .faqQuestion {
+    padding: 15px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #a3a4a8;
+}
+
+main .faq .faqBody .faqAnswers {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+main .faq .faqBody .faqAnswer {
+    display: none;
+    padding-left: 30px;
+}
+
+main .faq .faqBody .faqAnswer:target {
+    display: flex;
+    flex-direction: column;
+}
+
+main .faq .faqBody .faqAnswer .faqAnswerBody {
+    margin-top: 20px;
+    line-height: 1.74;
+    color: #6C6D74;
 }
 
 .servicesMain .services {
@@ -393,7 +540,7 @@ main .projects .project .illustration a img {
 
 .servicesMain .services .service {
     text-align: start;
-    padding: 30px;
+    padding-right: 50px;
     width: 30%;
     flex-grow: 2;
 }
@@ -412,6 +559,11 @@ main .projects .project .illustration a img {
 .servicesMain .services .service .more {
     text-decoration: none;
     font-size: 14px;
+}
+
+.sidePadding {
+    padding-left: 19% !important;
+    padding-right: 19% !important;
 }
 
 /* /////////////////////////////////////////////
@@ -459,7 +611,6 @@ footer .credentials {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    margin-top: 40px;
     padding: 50px 200px;
 }
 
