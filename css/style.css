@@ -1,0 +1,480 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+body {
+    border-left: 20px solid #fff;
+    border-right: 20px solid #fff;
+}
+
+/* NAV */
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 10px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    font-size: 15px;
+}
+
+header nav ul li {
+    display: flex;
+}
+
+header nav ul li, header nav a img {
+    padding: 27px;
+    align-items: center;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #2d2e33;
+}
+
+header nav ul .contact {
+    margin: 0 10px;
+}
+
+header nav ul .contact a {
+    background: #1e3684;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 500px;
+}
+
+/* GOLD BUTTON */
+
+.btn-gold {
+    background: #b7a088;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 500px;
+    font-size: 14px;
+}
+
+
+/* 
+
+
+SECTION 1 
+
+
+*/
+
+main .presentation {
+    width: 100%;
+    display: flex;
+    background-image: url("../src/home-hero-5c89fc46.webp");
+    padding: 40px;
+}
+
+main .presentation .blueSquare {
+    padding: 210px;
+    background: #1e3684;
+}
+
+.slogan {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.description {
+    font-size: 15px;
+    color: #6C6D74;
+    line-height: 1.74;
+}
+
+main .presentation .blueSquare .presentationTitle {
+    font-size: 36px;
+    color: #FFF;
+}
+
+main .presentation .blueSquare .expertise {
+    font-size: 15px;
+    font-weight: 400;
+    padding-top: 20px;
+    color: #FFFFFFB3;
+}
+
+main .presentation .blueSquare .servicesLinkContainer {
+    margin-top: 50px;
+}
+
+
+/* 
+
+
+SECTION 2 
+
+
+*/
+
+main .services {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 140px 0px;
+}
+
+main .services .service {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    width: 22%;
+}
+
+main .services .service:hover {
+    transition: 0.1s ease-in-out;
+    box-shadow:0 5px 15px rgb(0 0 0 / 8%);
+}
+
+
+main .services .service .serviceLink {
+    text-decoration: none;
+    padding: 10px;
+}
+
+main .services .service .serviceLink > * {
+    padding: 10px;
+    font-weight: 400;
+}
+
+main .services .service .serviceLink .serviceName {
+    font-size: 20px;
+    color: #2D2E33;
+}
+
+main .services .service .serviceLink .serviceDescription {
+    padding: 20px;
+}
+
+main .ourCompany {
+    background-image: url("../src/home-company-bg-0adc10f2.webp");
+    padding: 210px 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+main .ourCompany >* {
+    padding: 10px;
+}
+
+main .team {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+main .team .member {
+    display: flex;
+    width: 32.5%;
+}
+
+main .team .member a {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+main .team .member a img {
+    object-fit: cover;
+}
+
+main .team .member a .memberInfos {
+    visibility: hidden;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 95%;
+    background: #1e3684;
+    opacity: 0.8;
+    padding: 20px;
+    text-decoration: none;
+}
+
+main .team .member a .memberInfos .memberName {
+    font-size: 24px;
+    font-weight: 400;
+    color: #FFF;
+}
+
+main .team .member a .memberInfos .memberPosition {
+    font-size: 15px;
+    font-weight: 400;
+    color: #FFFFFF66;
+}
+
+main .team .member a:hover > .memberInfos {
+    visibility: visible;
+    transition-property: inherit;
+    transition-duration: 0.5s;
+}
+
+main .chooseUs {
+    display: flex;
+    justify-content: center;
+    padding: 130px 0px;
+}
+
+main .chooseUs .chooseUsSection {
+    width: 50%;
+}
+
+main .chooseUs .why {
+    padding-left: 210px;
+    padding-right: 50px;
+}
+
+main .chooseUs .why >* {
+    padding: 15px;
+}
+
+main .chooseUs .why .whyTitle {
+    padding-top: 0;
+}
+
+main .chooseUs .experience {
+    padding-left: 30px;
+}
+
+main .chooseUs .experience .experienceTitle {
+    font-size: 120px;
+    color: #b7a088;
+    font-weight: 400;
+}
+
+main .consultation {
+    display: flex;
+}
+
+main .consultation > div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+main .consultation .phoneMan {
+    background-image: url("../src/home-contact-01-8d8f3819.webp");
+}
+
+main .consultation .consultationInfos {
+    background-image: url("../src/home-contact-02-75c0e032.webp");
+    position: relative;
+}
+
+main .consultation .consultationInfos {
+    padding: 130px 80px;
+    display: flex;
+}
+
+main .consultation .consultationInfos >* {
+    z-index: 2;
+    padding: 10px;
+}
+
+main .consultation .consultationInfos .bg-blue {
+    background: rgba(33, 59, 147, 0.95);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+main .consultation .consultationInfos .consultationInfosTitle {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+main .consultation .consultationInfos .consultationInfosDescription {
+    color: #FFFFFFB3;
+}
+
+main .consultation .consultationInfos .consultationInfosLinks {
+    margin-top: 50px;
+}
+
+main .consultation .consultationInfos .consultationInfosLinks >* {
+    margin: 0px 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+main .clients {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 130px;
+}
+
+main .clients .clientsTitle {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: 400;
+    padding: 30px;
+}
+
+main .clients .clientsTitle .gold {
+    color: #b7a088;
+}
+
+main .clients .clientsLogo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main .clients .clientsLogo >* {
+    padding: 30px;
+}
+
+main .projectHeader {
+    padding: 210px;
+    background: rgba(30, 54, 132);
+}
+main .projectHeader >* {
+    position: relative;
+    left: 1%;
+    padding: 10px;
+}
+
+main .projectHeader .projectHeaderTitle {
+    font-size: 45px;
+    font-weight: 400;
+    color: #fff;
+}
+
+main .projectHeader .description {
+    color: #FFFFFFB3;
+}
+
+main .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 150px;
+}
+
+main .projects .project {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+main .projects .project .infos {
+    width: 30%;
+}
+
+main .projects .project .infos >* {
+    padding: 15px;
+    font-weight: 400;
+}
+
+main .projects .project .infos .number {
+    font-size: 64px;
+    color: #a3a4a8;
+}
+
+main .projects .project .infos .more {
+    text-decoration: none;
+    color: #b7a088;
+}
+
+main .projects .project .illustration a img {
+    height: 370px;
+}
+
+
+/* /////////////////////////////////////////////
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+                    FOOTER
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+///////////////////////////////////////////// */
+
+footer {
+    background: #1e3684;
+    margin-bottom: 20px;
+}
+
+footer .footerRedirection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 100px 200px 0 200px;
+}
+
+footer .footerSection {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding: 50px 0;
+}
+
+footer .footerSection .footerSectionTitle {
+    padding-bottom: 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer .footerSection .footerLink {
+    color: #FFFFFF66;
+    text-decoration: none;
+    padding-top: 15px;
+    font-size: 15px;
+}
+
+footer .credentials {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 50px 200px;
+}
+
+footer .credentials .doc {
+    padding: 10px;
+}
+
+footer .credentials .doc >* {
+    text-decoration: none;
+    font-size: 15px;
+    color: #ffffffb3;
+}
+
+footer .credentials .doc .privacy {
+    padding-left: 10px;
+}
+
+footer .credentials .doc .terms {
+    border-right: #6C6D74 solid 1px;
+    padding-right: 10px;
+}
+
+footer .credentials .copyrights {
+    font-size: 12px;
+    color: #FFFFFF66;
+}
+
+footer .credentials .copyrights a {
+    text-decoration: none;
+    color: #FFFFFF66;
+}
